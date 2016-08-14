@@ -1,0 +1,12 @@
+$cart__padding: $gutter-normal;
+
+.cart {
+    display: block;
+    padding: $cart__padding;
+    float: right;
+
+    &__items,
+    &__price {
+        float: right;
+    }
+}

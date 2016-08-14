@@ -1,0 +1,17 @@
+node_modules
+typings
+.sass-cache
+
+#Build
+dev
+dist
+
+#Files
+index.html
+*.js
+*.js.map
+
+#Excludes
+!gulpfile.js
+!webpack.config.js
+!webpack-prod.config.js

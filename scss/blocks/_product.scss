@@ -1,0 +1,7 @@
+$product__padding: $gutter-normal;
+
+.product {
+    display: block;
+    padding: $product__padding;
+    float: left;
+}
