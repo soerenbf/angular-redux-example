@@ -1,4 +1,3 @@
-import ngRedux from 'ng-redux';
 import { createStore } from 'redux'
 
 import { shopComponent } from './app.component';
