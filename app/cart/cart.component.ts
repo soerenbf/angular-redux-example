@@ -19,14 +19,8 @@ class CartController implements ng.IComponentController {
     }
 
     private handleStateChange = () => {
-        this.products = this.store.getState();
-            
-        let accumulatedPrice = 0;
-        this.products.forEach(product => {
-            accumulatedPrice += product.price;
-        });
-
-        this.totalPrice = accumulatedPrice;
+        this.products = this.store.getState();  
+        this.totalPrice = this.products.reduce((prev: number, current: IProduct) => prev + current.price, 0);
     }
 }
 
